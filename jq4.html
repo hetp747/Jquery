@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" >
+
+            <!-- Optional theme -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" >
+
+            <!-- Latest compiled and minified JavaScript -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" ></script>
+        <script>
+            $(document).ready(function(){
+                $("#btn").click(function(){
+                    $(".box").addClass("active")
+                });
+                $("#btn2").click(function(){
+                    $(".box").removeClass("active")
+                });
+                $("#btn3").click(function(){
+                    $(".box2").toggleClass("active1")
+                });
+
+            });
+        </script>
+        <style>
+            .box,box2{
+                border: 2px solid gray;
+                height: 150px;
+                width: 150px;
+            }
+            .active{
+                background-color: aquamarine;
+                height: 150px;
+                width: 150px;
+                border: 2px solid royalblue;
+            }
+            .active1{
+                background-color: palevioletred;
+                height: 250px;
+                width: 250px;
+                border: 2px solid royalblue;
+            }
+            a{
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="btn">Active</button>
+        <button id="btn2">Remove</button>
+        <button id="btn3">Toggle</button>
+        <div class="box"></div>
+        <div class="box2"></div><br><br><br>
+        <button  class="btn btn-primary"><a href="index.html">Go to home</a></button>
+    </body>
+</html>
