@@ -53,27 +53,33 @@
         </script>
     </head>
     <body><div class="container">
-        <h1 align="center">Calculator By HR PATEL</h1>
-        <table border="2px" cellspacing="0px" cellpadding="10px" align="center">
-        <tr>
-            <td>Number 1</td>
-            <td><input type="text" id="input1" placeholder="Enter Number 1 "></td>
-        </tr>
-        <tr>
-            <td>Number 2</td>
-            <td><input type="text" id="input2" placeholder="Enter Number 2 "></td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <button id="addbtn" name="btn" >Addition </button>
-                <button id="subbtn" name="btn" >Substaction </button>
-                <button id="mulbtn" name="btn" >Multiplication </button>
-                <button id="divbtn" name="btn" >Divide </button>
-            </td>
-        </tr>
-    </table>
-</div><br><br><br>
-<button  class="btn btn-primary"><a href="index.html">Back To Home</a></button>
-
+        <h1 class="text-center">Calculator By HR PATEL</h1>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <table class="table table-bordered">
+                    <tr>
+                        <td>Number 1</td>
+                        <td><input type="text" id="input1" class="form-control" placeholder="Enter Number 1"></td>
+                    </tr>
+                    <tr>
+                        <td>Number 2</td>
+                        <td><input type="text" id="input2" class="form-control" placeholder="Enter Number 2"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button id="addbtn" class="btn btn-primary" name="btn">Addition</button>
+                            <button id="subbtn" class="btn btn-primary" name="btn">Subtraction</button>
+                            <button id="mulbtn" class="btn btn-primary" name="btn">Multiplication</button>
+                            <button id="divbtn" class="btn btn-primary" name="btn">Division</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="text-center">
+        <button class="btn btn-primary"><a href="index.html">Back To Home</a></button>
+    </div>
     </body>
 </html>
