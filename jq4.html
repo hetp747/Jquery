@@ -26,16 +26,28 @@
 
             });
         </script>
+
         <style>
-            .box,box2{
+            .box{
                 border: 2px solid gray;
                 height: 150px;
                 width: 150px;
+                vertical-align: middle;
+                margin: 5px;
+                padding: 20px;
+            }
+            .box2{
+                border: 2px solid gray;
+                height: 150px;
+                width: 150px;
+                margin: 5px;
+                padding: 20px;
+                
             }
             .active{
                 background-color: aquamarine;
-                height: 150px;
-                width: 150px;
+                height: 250px;
+                width: 250px;
                 border: 2px solid royalblue;
             }
             .active1{
@@ -47,14 +59,33 @@
             a{
                 color:white;
             }
+            a{color:white;}
+                                @media (max-width: 768px) {
+                                    #input, #btn {
+                                        width: 100%;
+                                    }
+                                }
         </style>
     </head>
     <body>
-        <button id="btn">Active</button>
-        <button id="btn2">Remove</button>
-        <button id="btn3">Toggle</button>
-        <div class="box"></div>
-        <div class="box2"></div><br><br><br>
-        <button  class="btn btn-primary"><a href="index.html">Go to home</a></button>
+        <div class="container">
+            <table>
+                <tr>
+                    <td align="center"><button id="btn" class="btn btn-danger">Active</button>
+                        <button id="btn2"class="btn btn-danger">Remove</button></td>
+                        <td align="center"> <button id="btn3" class="btn btn-danger" >Toggle</button></td>
+                </tr>
+                <tr>
+                        <td><div class="box" >This Class Active & Deactive</div></td>
+                        <td><div class="box2">Using One Toggle Both Work</div></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><button  class="btn btn-primary"><a href="index.html">Go to home</a></button></td>
+                </tr>
+       
+        
+        
+        
+
     </body>
 </html>

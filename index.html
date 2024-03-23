@@ -1,30 +1,40 @@
-<html>
-    <head>
-        <title></title>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                            <!-- Latest compiled and minified CSS -->
-                            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" >
-
-                            <!-- Optional theme -->
-                            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" >
-                
-                            <!-- Latest compiled and minified JavaScript -->
-                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" ></script>
-            <style>
-                a{color:white;}
-            </style>
-        <script>
-                $(document).ready(function(){
-                    $("#namebtn").click(function(){
-                        alert("Hello My Name is Stark");
-                    });                   
-                });
-
-        </script>
-    </head>
-    <body>
-        <button  id="namebtn" >Click</button>
-    </div><br><br><br>
-    <button  class="btn btn-primary"><a href="jq2.html">NEXT</a></button>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css">
+    <style>
+        /* Additional styles can be added here */
+        /* For example, you can style the buttons to be full width on small screens */
+        @media (max-width: 768px) {
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="namebtn" class="btn btn-primary">Click</button>
+        <br><br><br>
+        <button class="btn btn-primary"><a href="jq2.html">NEXT</a></button>
+    </div>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#namebtn").click(function(){
+                alert("Hello My Name is Stark");
+            });                   
+        });
+    </script>
+</body>
 </html>

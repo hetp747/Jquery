@@ -11,9 +11,18 @@
                 
                             <!-- Latest compiled and minified JavaScript -->
                             <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" ></script>
-        <style>
-                a{color:white;}
-            </style>
+                            <style>
+                                /* Additional styles can be added here */
+                                /* For example, you can style the input and button to be full width on small screens */
+                                a{color:white;}
+                                @media (max-width: 768px) {
+                                    #input, #btn {
+                                        width: 100%;
+                                    }
+                                }
+
+                            </style>
+                        
         <script>
             $(document).ready(function(){
                 $("#addbtn").click(function(){
@@ -43,7 +52,7 @@
             });
         </script>
     </head>
-    <body>
+    <body><div class="container">
         <h1 align="center">Calculator By HR PATEL</h1>
         <table border="2px" cellspacing="0px" cellpadding="10px" align="center">
         <tr>
